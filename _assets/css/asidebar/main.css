@@ -1,0 +1,59 @@
+/*
+   This file is part of Eighty Stylesheets, Wei's website stylesheets.
+
+   Eighty Stylesheets is free software: you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation, either version 3 of the
+   License, or (at your option) any later version.
+
+   Eighty Stylesheets is distributed in the hope that it will be
+   useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with Eighty Stylesheets. If not, see
+   <https://www.gnu.org/licenses/>.
+
+   Copyright (c) Wei Tang, 2020.
+*/
+
+/* aside + nav-bar = asidebar! */
+
+#asidebar {
+    padding-top: 6rem;
+    padding-right: 0;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    max-width: 15rem;
+}
+
+#toc {
+    margin-bottom: 2.5rem;
+}
+
+#asidebar .main-menu ul, #toc ul {
+    font-size: 1.15rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+#asidebar .main-menu ul li, #toc ul li {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: none;
+}
+
+#asidebar .main-menu ul li a, #toc ul li a {
+    display: block;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#asidebar .main-menu a, #toc a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    background: none;
+    position: relative;
+}

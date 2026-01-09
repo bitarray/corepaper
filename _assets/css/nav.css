@@ -1,0 +1,62 @@
+/*
+   This file is part of Eighty Stylesheets, Wei's website stylesheets.
+
+   Eighty Stylesheets is free software: you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation, either version 3 of the
+   License, or (at your option) any later version.
+
+   Eighty Stylesheets is distributed in the hope that it will be
+   useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with Eighty Stylesheets. If not, see
+   <https://www.gnu.org/licenses/>.
+
+   Copyright (c) Wei Tang, 2020.
+*/
+
+body > header {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+body > header > .header-bar {
+    background: rgb(67, 52, 34);
+    padding: 2px;
+}
+
+body > header > nav {
+    background: rgba(241, 231, 208, 0.88);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header > nav .nav-brand {
+    padding: 0.25rem 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+body > header > nav .nav-brand a {
+    background: none;
+    text-decoration: none;
+}
+
+body > header > nav .nav-action {
+    --display: var(--media-xs) none;
+    display: var(--display, flex);
+    flex-direction: row;
+}
+
+body > header > nav .nav-action-item {
+    padding: 0.25rem 1rem;
+}
+
+body > header > nav .nav-action-item a {
+    background: none;
+    text-decoration: none;
+}

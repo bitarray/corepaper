@@ -1,0 +1,9 @@
+<ul>
+  <!-- TODO: is-current-page -->
+  <li>
+    <a href="{{url}}">{{title}}</a>
+    {{#each children}}
+      {{> document/sitemap }}
+    {{/each}}
+  </li>
+</ul>

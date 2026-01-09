@@ -1,0 +1,40 @@
+/*
+   This file is part of Eighty Stylesheets, Wei's website stylesheets.
+
+   Eighty Stylesheets is free software: you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation, either version 3 of the
+   License, or (at your option) any later version.
+
+   Eighty Stylesheets is distributed in the hope that it will be
+   useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with Eighty Stylesheets. If not, see
+   <https://www.gnu.org/licenses/>.
+
+   Copyright (c) Wei Tang, 2020.
+*/
+
+main {
+    --width: var(--media-lte-sm) 100%;
+    width: var(--width, 70%);
+    --overflow-x: var(--media-lte-sm) hidden;
+    overflow-x: var(--overflow-x);
+    --box-sizing: var(--media-lte-sm) border-box;
+    box-sizing: var(--box-sizing);
+}
+
+section, header, article footer, div.highlight, hr {
+    --width: var(--media-lte-sm) 100%;
+    width: var(--width, 60%);
+}
+
+.sidenote, .marginnote {
+    --margin-right: var(--media-lte-sm) -60%;
+    margin-right: var(--margin-right, 60%);
+    --width: var(--media-lte-sm) 45%;
+    width: var(--width, 52%);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>
+      {{#if siteTitleOnly}}{{siteTitle}}{{else}}{{pageTitle}} | {{siteTitle}}{{/if}}
+    </title>
+
+    {{#if pageDescription}}
+      <meta property="og:description" content="{{pageDescription}}" />
+    {{/if}}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{pageUrl}}" />
+    <meta property="og:site_name" content="{{siteTitle}}" />
+
+    <meta itemprop="name" content="{{pageTitle}}">
+    {{#if pageDescription}}
+      <meta itemprop="description" content="{{pageDescription}}">
+    {{/if}}
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{pageTitle}}" />
+    {{#if pageDescription}}
+      <meta name="twitter:description" content="{{pageDescription}}" />
+    {{/if}}
+
+    <link rel="stylesheet" href="{{siteBaseUrl}}css/site.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-bar"></div>
+      <nav>
+        <div class="nav-brand">
+          <a href="{{siteBaseUrl}}">{{siteTitle}}</a>
+        </div>
+        {{#if hasSiteLinks}}
+          <div class="nav-action">
+            {{#each siteLinks}}
+              <div class="nav-action-item">
+                <a href="{{this.url}}">{{this.name}}</a>
+              </div>
+            {{/each}}
+          </div>
+        {{/if}}
+      </nav>
+    </header>
+
+    <div id="content">
+      {{#if sitemap}}
+      <aside id="asidebar">
+        <nav class="main-menu">
+          <h3><a href="{{siteBaseUrl}}">{{siteTitle}}</a></h3>
+          {{#each sitemap}}
+            {{> document/sitemap }}
+          {{/each}}
+        </nav>
+      </aside>
+      {{/if}}
+
+      <main>
+        <article>
+          <header>
+            {{#if toc}}
+              <span id="toc" class="marginnote">
+                <h3>Table of contents</h3>
+                {{{toc}}}
+              </span>
+            {{/if}}
+
+            <h1 class="page">{{pageTitle}}</h1>
+            {{#if pageDescriptionContent}}
+              <p class="subtitle">{{{pageDescriptionContent}}}</p>
+            {{/if}}
+          </header>
+          <section>
+            {{{pageContent}}}
+
+            {{#if localSitemap.children}}
+              <h2>On this page</h2>
+              <ul>
+                {{#each localSitemap.children}}
+                  <li><a href="{{this.url}}">{{this.title}}</a>: {{this.description}}</li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </section>
+
+          <footer>
+            <p class="de-emphasize copyright">
+              <a href="https://that.world/legal.txt">Legal notice</a>.
+
+              Copyright {{pageCopyrightYears}}
+              <a href="{{pageAuthorUrl}}">{{pageAuthor}}</a>.
+
+              {{#if pageLicense}}
+                <br />
+                This page is licensed under the terms of
+                <a href="{{siteBaseUrl}}license/{{pageLicense}}.txt">{{pageLicense}}</a>.
+              {{/if}}
+
+              {{#if pageLicenseCode}}
+                <br />
+                In addition, code blocks in this page are licensed under the terms of
+                <a href="{{siteBaseUrl}}license/{{pageLicenseCode}}.txt">{{pageLicenseCode}}</a>.
+              {{/if}}
+            </p>
+          </footer>
+        </article>
+      </main>
+    </div>
+
+    <script async src="{{siteBaseUrl}}js/vendor/highlight.js"></script>
+    <script async src="{{siteBaseUrl}}js/vendor/mathjax.js"></script>
+  </body>
+</html>

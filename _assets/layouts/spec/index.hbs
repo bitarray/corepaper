@@ -1,0 +1,30 @@
+<html>
+  <head lang="en-US">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Core Paper Specifications</title>
+
+    <meta name="twitter:title" content="Core Paper Specifications">
+    <meta name="twitter:description" content="List of all specifications of Core Paper.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://specs.corepaper.org/">
+    <meta name="twitter:site" content="@sorpaas">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Core Paper Specifications">
+    <meta property="og:description" content="List of all specifications of Core Paper.">
+    <meta property="og:url" content="https://specs.corepaper.org/">
+    <meta property="og:site_name" content="Core Paper">
+
+    <meta itemprop="name" content="Core Paper Specifications">
+    <meta itemprop="description" content="List of all specifications of Core Paper.">
+  </head>
+  <body>
+    <ul>
+      {{#each specs}}
+      <li><a href="{{this.url}}">{{this.id}}</a>: {{this.description}} (<a href="{{this.discuss}}">Discuss</a>).</li>
+      {{/each}}
+    </ul>
+    <p><a href="https://that.world/legal.txt">Legal notice</a></p>
+  </body>
+</html>
