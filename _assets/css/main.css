@@ -59,7 +59,6 @@ body {
     flex-basis: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     align-items: flex-start;
 }
 

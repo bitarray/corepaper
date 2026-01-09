@@ -21,15 +21,27 @@
 /* aside + nav-bar = asidebar! */
 
 #asidebar {
-    padding-top: 6rem;
-    padding-right: 0;
+    padding-top: 2rem;
+    padding-right: 1rem;
     padding-bottom: 6rem;
     padding-left: 4rem;
-    max-width: 15rem;
+    max-width: 20rem;
 }
 
 #toc {
     margin-bottom: 2.5rem;
+}
+
+#asidebar .main-menu {
+    padding: 0.5rem;
+    border: 1px;
+    border-style: solid;
+}
+
+#asidebar .main-menu h3 {
+    margin-top: 0.7rem;
+    margin-bottom: 1.4rem;
+    text-align: center;
 }
 
 #asidebar .main-menu ul, #toc ul {
@@ -58,6 +70,6 @@
     position: relative;
 }
 
-#toc a:hover {
+#toc a:hover, #asidebar .main-menu ul li a:hover {
     background-color: var(--a-hover-background-color);
 }

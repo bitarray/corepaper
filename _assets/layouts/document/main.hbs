@@ -30,36 +30,7 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-bar"></div>
-      <nav>
-        <div class="nav-brand">
-          <a href="{{siteBaseUrl}}">{{siteTitle}}</a>
-        </div>
-        {{#if hasSiteLinks}}
-          <div class="nav-action">
-            {{#each siteLinks}}
-              <div class="nav-action-item">
-                <a href="{{this.url}}">{{this.name}}</a>
-              </div>
-            {{/each}}
-          </div>
-        {{/if}}
-      </nav>
-    </header>
-
     <div id="content">
-      {{#if sitemap}}
-      <aside id="asidebar">
-        <nav class="main-menu">
-          <h3><a href="{{siteBaseUrl}}">{{siteTitle}}</a></h3>
-          {{#each sitemap}}
-            {{> document/sitemap }}
-          {{/each}}
-        </nav>
-      </aside>
-      {{/if}}
-
       <main>
         <article>
           <header>
@@ -110,6 +81,17 @@
           </footer>
         </article>
       </main>
+
+      {{#if sitemap}}
+      <aside id="asidebar">
+        <nav class="main-menu">
+          <h3><a href="{{siteBaseUrl}}">Core Paper</a></h3>
+          {{#each sitemap}}
+            {{> document/sitemap }}
+          {{/each}}
+        </nav>
+      </aside>
+      {{/if}}
     </div>
 
     <script async src="{{siteBaseUrl}}js/vendor/highlight.js"></script>
