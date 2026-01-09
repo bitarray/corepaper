@@ -23,6 +23,7 @@
 #asidebar {
     padding: 2rem;
     max-width: 20rem;
+    margin-left: auto;
 }
 
 #toc {
