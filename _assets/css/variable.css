@@ -17,3 +17,8 @@
 
    Copyright (c) Wei Tang, 2020.
 */
+
+:root {
+    --main-background-color: #fffff8;
+    --a-hover-background-color: rgba(0, 100, 255, .1);
+}

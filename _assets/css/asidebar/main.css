@@ -43,12 +43,12 @@
     margin: 0;
     padding-left: 1rem;
     list-style: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 #asidebar .main-menu ul li a, #toc ul li a {
-    display: block;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding: 0.25rem;
 }
 
 #asidebar .main-menu a, #toc a {
@@ -56,4 +56,8 @@
     text-decoration: none;
     background: none;
     position: relative;
+}
+
+#toc a:hover {
+    background-color: var(--a-hover-background-color);
 }
