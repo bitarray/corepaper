@@ -21,10 +21,7 @@
 /* aside + nav-bar = asidebar! */
 
 #asidebar {
-    padding-top: 2rem;
-    padding-right: 1rem;
-    padding-bottom: 6rem;
-    padding-left: 4rem;
+    padding: 2rem;
     max-width: 20rem;
 }
 
@@ -33,9 +30,13 @@
 }
 
 #asidebar .main-menu {
-    padding: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     border: 1px;
     border-style: solid;
+    border-radius: 5px;
 }
 
 #asidebar .main-menu h3 {
@@ -57,6 +58,18 @@
     list-style: none;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+    text-align: initial;
+    font-weight: initial;
+}
+
+#asidebar .main-menu > ul > li {
+    text-align: center;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+#asidebar .main-menu > ul > li > ul > li, #toc > ul > li {
+    padding-left: 0;
 }
 
 #asidebar .main-menu ul li a, #toc ul li a {
