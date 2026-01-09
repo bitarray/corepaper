@@ -72,7 +72,7 @@
     padding-left: 0;
 }
 
-#asidebar .main-menu ul li a, #toc ul li a {
+#asidebar .main-menu a, #toc a {
     padding: 0.25rem;
 }
 
@@ -83,6 +83,6 @@
     position: relative;
 }
 
-#toc a:hover, #asidebar .main-menu ul li a:hover {
+#toc a:hover, #asidebar .main-menu a:hover {
     background-color: var(--a-hover-background-color);
 }
