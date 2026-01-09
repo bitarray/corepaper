@@ -37,6 +37,7 @@
     border: 1px;
     border-style: solid;
     border-radius: 5px;
+    background-color: var(--sitemap-background-color);
 }
 
 #asidebar .main-menu h3 {
