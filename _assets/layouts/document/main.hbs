@@ -41,6 +41,14 @@
               </span>
             {{/if}}
 
+            <span id="breadcrumb">
+              <a href="{{siteBaseUrl}}">Core Paper</a>
+              {{#if localSitemap.breadcrumb}}
+                {{#each localSitemap.breadcrumb}}
+                  &gt; <a href="{{this.url}}">{{this.title}}</a>
+                {{/each}}
+              {{/if}}
+            </span>
             <h1 class="page">{{pageTitle}}</h1>
             {{#if pageDescriptionContent}}
               <p class="subtitle">{{{pageDescriptionContent}}}</p>
