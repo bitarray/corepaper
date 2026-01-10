@@ -277,6 +277,10 @@ h1 {
     line-height: 1.2;
 }
 
+header h1 {
+    margin-top: 3rem;
+}
+
 h2 {
     font-weight: 500;
     margin-top: 2.1rem;
