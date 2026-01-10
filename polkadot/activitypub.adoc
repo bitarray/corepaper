@@ -2,6 +2,8 @@
 Wei Tang <wei@that.world>
 :license: CC-BY-SA-4.0
 :license-code: Apache-2.0
+:id: polkadot-activitypub
+:sitemap: ActivityPub Governance Forum
 
 [meta=description]
 A decentralized blockchain needs a decentralized governance discussion

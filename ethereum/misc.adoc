@@ -1,7 +1,9 @@
-= Miscellaneous
+= Ethereum miscellaneous
 Wei Tang <wei@that.world>
 :license: CC-BY-SA-4.0
 :license-code: Apache-2.0
+:id: misc
+:sitemap: Miscellaneous
 
 [meta="description"]
 This page are miscellaneous of various things that do not belong to a
