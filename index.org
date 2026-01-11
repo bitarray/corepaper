@@ -1,0 +1,13 @@
+#+title: Core Paper
+#+subtitle: Collection of specifications and reviews.
+
+Core Paper is a collection of specifications, reviews and descriptions
+of various blockchain projects.
+
+* Community
+- Matrix: [[https://riot.im/app/#/room/#corepaper:matrix.org][Core Paper]], [[https://riot.im/app/#/room/#evm:matrix.org][EVM]]
+- Discord: [[https://discordapp.com/invite/b6vZDZs][Invite Link]]
+
+* Contributing
+Please send pull requests to the [[https://github.com/bitarray/corepaper][Github repository]]. You can also
+directly mail patches to [[mailto:wei@pacna.org][Wei Tang]].
