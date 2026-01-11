@@ -14,5 +14,5 @@ directly mail patches to [[mailto:wei@pacna.org][Wei Tang]].
 
 * History
 Core Paper was a project started in 2020. The first page of Core Paper
-was regarding [[https://corepaper.org/mining/signed/][signed mining]]. The website is rendered by [[https://github.com/bitarray/eighty][Eighty]], a
+was regarding [[file:pow/signed.adoc][signed mining]]. The website is rendered by [[https://github.com/bitarray/eighty][Eighty]], a
 custom static generator built specifically for the project.
