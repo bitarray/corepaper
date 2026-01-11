@@ -11,3 +11,8 @@ of various blockchain projects.
 * Contributing
 Please send pull requests to the [[https://github.com/bitarray/corepaper][Github repository]]. You can also
 directly mail patches to [[mailto:wei@pacna.org][Wei Tang]].
+
+* History
+Core Paper was a project started in 2020. The first page of Core Paper
+was regarding [[https://corepaper.org/mining/signed/][signed mining]]. The website is rendered by [[https://github.com/bitarray/eighty][Eighty]], a
+custom static generator built specifically for the project.
