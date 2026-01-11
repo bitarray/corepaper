@@ -41,6 +41,15 @@
               </span>
             {{/if}}
 
+            {{#if revisions}}
+              <span id="revisions" class="marginnote">
+                <h3>Revision history</h2>
+                {{#each revisions}}
+                <p><strong>{{this.date}}</strong>: {{{this.content}}}</p>
+                {{/each}}
+              </span>
+            {{/if}}
+
             <span id="breadcrumb">
               <a href="{{siteBaseUrl}}">Core Paper</a>
               {{#if localSitemap.breadcrumb}}

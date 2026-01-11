@@ -1,5 +1,6 @@
 #+title: Proof of Work
 #+subtitle: Review and research on Proof of Work blockchains
 #+order: 5
+#+revision[20260111]: created
 
 Some notes on Proof of Work blockchains.

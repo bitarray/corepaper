@@ -524,6 +524,11 @@ main > article > header > h1 > a:link.no-line {
     user-select: none;
 }
 
+.marginnote h3 {
+    border-bottom: dashed;
+    border-bottom-width: 1px;
+}
+
 .sidenote-number {
     counter-increment: sidenote-counter;
 }

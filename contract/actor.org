@@ -1,5 +1,7 @@
 #+title: Actor-based contract
 #+subtitle: Asynchronous model for smart contracts
+#+revision[20200617]: Added additional description about the scheduler design for message loop.
+#+revision[20200622]: Added actor groups, system actor descriptions, and specific actor design on information fetcher.
 
 Actor-based contract model aims at solving some of the outstanding
 issues in current call-based contract model in backward compatibility,
@@ -262,8 +264,3 @@ Special thanks to the insightful discussions with Sergei Shulepov,
 Moonbeam team, and _phyro_ on this topic, and inspiration of prior
 work [[https://github.com/primea/design][Primea]].
 
-* Revision history
-- *2020-06-17*: Added additional description about the scheduler
-  design for message loop.
-- *2020-06-22*: Added actor groups, system actor descriptions, and
-  specific actor design on information fetcher.
