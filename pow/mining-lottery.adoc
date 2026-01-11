@@ -2,6 +2,7 @@
 Wei Tang <wei@that.world>
 :license: CC-BY-SA-4.0
 :license-code: Apache-2.0
+:id: kulupu/mining-lottery
 
 [meta="description"]
 Mining should be considered lottery process, but not professional

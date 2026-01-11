@@ -1,0 +1,5 @@
+#+title: Proof of Work
+#+subtitle: Review and research on Proof of Work blockchains
+#+order: 5
+
+Some notes on Proof of Work blockchains.

@@ -2,11 +2,11 @@
 Wei Tang <wei@that.world>
 :license: CC-BY-SA-4.0
 :license-code: Apache-2.0
-:order: 5
+:id: kulupu
 
 [meta="description"]
-Proof of Work in general and also Kulupu -- a proof of work blockchain
-with on-chain governance and online upgrade.
+Kulupu is a proof of work blockchain with on-chain governance and
+online upgrade.
 
 == Overview
 
