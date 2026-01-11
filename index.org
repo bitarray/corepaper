@@ -1,8 +1,8 @@
 #+title: Core Paper
 #+subtitle: Collection of specifications and reviews.
 
-Core Paper is a collection of specifications, reviews and descriptions
-of various blockchain projects.
+Core Paper is a wiki. It contains a collection of specification and
+reviews, mainly focusing on blockchain projects.
 
 * Community
 - Matrix: [[https://riot.im/app/#/room/#corepaper:matrix.org][Core Paper]], [[https://riot.im/app/#/room/#evm:matrix.org][EVM]]
@@ -14,5 +14,5 @@ directly mail patches to [[mailto:wei@pacna.org][Wei Tang]].
 
 * History
 Core Paper was a project started in 2020. The first page of Core Paper
-was regarding [[file:pow/signed.adoc][signed mining]]. The website is rendered by [[https://github.com/bitarray/eighty][Eighty]], a
+was regarding [[file:pow/signed.adoc][signed mining]]. The website is rendered by [[file:eighty.org][Eighty]], a
 custom static generator built specifically for the project.

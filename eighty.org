@@ -1,0 +1,13 @@
+#+title: Eighty
+#+subtitle: A static website generator.
+#+id: eighty
+#+revision[20260111]: created
+
+Eighty is a static website generator, currently specifically built for
+the Core Paper wiki.
+
+* Features
+- Document-focused and intuitive
+- Multi-format support, currently with AsciiDoc, Markdown, and Org
+  Mode.
+- Sitemap support, requiring no "sitemap config".
