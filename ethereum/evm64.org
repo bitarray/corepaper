@@ -1,6 +1,7 @@
 #+id: evm64
 #+title: EVM64
 #+subtitle: 64-bit mode EVM opcodes
+#+license: CC0-1.0
 #+revision[20250423]: created
 
 EVM64 is a series of EIPs that define 64-bit mode for Ethereum Virtual
