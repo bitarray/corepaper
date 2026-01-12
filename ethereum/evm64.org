@@ -1,0 +1,30 @@
+#+id: evm64
+#+title: EVM64
+#+subtitle: 64-bit mode EVM opcodes
+#+revision[20250423]: created
+
+EVM64 is a series of EIPs that define 64-bit mode for Ethereum Virtual
+Machine. Not all computations in EVM can utilize the full 256-bit
+integer width. EVM64 can therefore be beneficial to avoid unnecessary
+cycles.
+
+* Options
+There are two "options" available for EVM64 -- two different types of
+implementations with their tradeoffs.
+
+** Option A: Prefix Opcode
+The first option is to define EVM64 via a prefix opcode =0xC0=. It
+contains the following EIPs.
+
+- [[https://eips.ethereum.org/EIPS/eip-7937][EIP-7937]] of EVM64 for endianness-independent arithmetic, comparison,
+  bitwise and flow operations.
+- [[https://github.com/ethereum/EIPs/pull/9819][EIP-9819]] for EOF support.
+- [[https://github.com/ethereum/EIPs/pull/9821][EIP-9821]] for little-endian =BYTE64=, =MLOAD64=, =MSTORE64= and =PUSH*64=
+  opcodes.
+
+** Option B: EOF code section
+The second option is to define EVM64 as a new code type in EOF. It
+contains the following EIPs.
+
+- [[https://github.com/ethereum/EIPs/pull/9834][EIP-9834]] which defines an extended version of =types_section= for EOF.
+- [[https://github.com/ethereum/EIPs/pull/9835][EIP-9835]] which defines the EVM64 code section type.

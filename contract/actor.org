@@ -1,3 +1,4 @@
+#+id: contract/actor
 #+title: Actor-based contract
 #+subtitle: Asynchronous model for smart contracts
 #+revision[20200617]: Added additional description about the scheduler design for message loop.
