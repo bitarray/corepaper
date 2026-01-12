@@ -1,6 +1,7 @@
 #+title: Eighty
 #+subtitle: A static website generator.
 #+id: eighty
+#+license: CC-BY-SA-4.0
 #+revision[20260111]: created
 
 Eighty is a static website generator, currently specifically built for
@@ -11,3 +12,35 @@ the Core Paper wiki.
 - Multi-format support, currently with AsciiDoc, Markdown, and Org
   Mode.
 - Sitemap support, requiring no "sitemap config".
+
+* Rendering process
+The process for rendering is separated into different stages. In
+Eighty, they are referred to as different "workspaces".
+
+** Metadatad workspace
+In this step, the metadata of all files are read. The site metadata is
+first read from the =_site.json= file. The documents are initially
+read (with its source path, type, and modified time known).
+
+** Rendered workspace
+The workspace then gets rendered. For each document depending on its
+type, it'll call either AsciiDoctor or Pandoc to render the file. The
+"frontmatter" of the document is also stored. At this step, the
+document name also becomes known -- depending on whether the
+frontmatter contains an =id= field and the file path, this can be of
+different value.
+
+In the end, the permalink of the document is already known. However,
+note that in the rendered content, hyperlinks still points to the
+original source path.
+
+** Full workspace
+The assets get read. For each rendered documents, variables get read
+and replaced (at this moment we don't yet have any variables). The
+hyperlinks also get replaced with the permalinks.
+
+** Post workspace
+This processing step is mainly reserved for future usages. At this
+moment, no particular processing is done -- the site is simply
+organized as a map of its final end path and the content, ready for
+serving or writing to the build directory.
