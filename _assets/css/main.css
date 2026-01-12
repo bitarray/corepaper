@@ -529,6 +529,10 @@ h2, .marginnote h3 {
     border-bottom-width: 1px;
 }
 
+.marginnote p {
+    font-size: 1.15rem;
+}
+
 .sidenote-number {
     counter-increment: sidenote-counter;
 }
